@@ -48,10 +48,11 @@ its `.cpp` file. Each runnable solution needs its own `main` function.
 ### Two Pointers
 - [x] 0283 Move Zeroes
 - [x] 0392 Is Subsequence
-- [ ] 0011 Container With Most Water
+- [x] 0011 Container With Most Water
 - [ ] 1679 Max Number of K-Sum Pairs
 
 ### Sliding Window
+- [ ] 0003 Longest Substring Without Repeating Characters
 - [x] 0643 Maximum Average Subarray I
 - [ ] 1456 Maximum Number of Vowels in a Substring of Given Length
 - [ ] 1004 Max Consecutive Ones III
@@ -68,7 +69,8 @@ its `.cpp` file. Each runnable solution needs its own `main` function.
 - [ ] 2352 Equal Row and Column Pairs
 
 ### Stack
-- [ ] 2390 Removing Stars From a String
+- [x] 0020 Valid Parentheses
+- [x] 2390 Removing Stars From a String
 - [ ] 0394 Decode String
 - [ ] 0735 Asteroid Collision
 
@@ -77,6 +79,8 @@ its `.cpp` file. Each runnable solution needs its own `main` function.
 - [ ] 0649 Dota2 Senate
 
 ### Linked List
+- [x] 0002 Add Two Numbers
+- [x] 0021 Merge Two Sorted Lists
 - [ ] 2095 Delete the Middle Node of a Linked List
 - [ ] 0328 Odd Even Linked List
 - [ ] 0206 Reverse Linked List
@@ -85,7 +89,7 @@ its `.cpp` file. Each runnable solution needs its own `main` function.
 ### Binary Tree DFS
 - [ ] 0104 Maximum Depth of Binary Tree
 - [ ] 0872 Leaf-Similar Trees
-- [ ] 1448 Count Good Nodes in Binary Tree
+- [ ] 1448 Count Good Nodes in a Binary Tree
 - [ ] 0437 Path Sum III
 - [ ] 1372 Longest ZigZag Path in a Binary Tree
 - [ ] 0236 Lowest Common Ancestor of a Binary Tree
