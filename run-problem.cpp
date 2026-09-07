@@ -39,17 +39,21 @@ void findCppFiles(const std::string &folder, std::vector<std::string> &files)
 
 int main()
 {
-    char root[MAX_PATH];
-    GetCurrentDirectoryA(MAX_PATH, root);
+    char executablePath[MAX_PATH];
+    GetModuleFileNameA(nullptr, executablePath, MAX_PATH);
+    std::string root{executablePath};
+    root = root.substr(0, root.find_last_of("\\\\/"));
 
     std::vector<std::string> files;
     findCppFiles(root, files);
-    files.erase(std::remove(files.begin(), files.end(), std::string(root) + "\\run-problem.cpp"), files.end());
+    files.erase(std::remove(files.begin(), files.end(), root + "\\run-problem.cpp"), files.end());
     std::sort(files.begin(), files.end());
 
     for (std::size_t index = 0; index < files.size(); ++index)
     {
-        std::cout << index + 1 << ". " << files[index] << '\n';
+        const std::string &path{files[index]};
+        const std::string filename{path.substr(path.find_last_of("\\\\/") + 1)};
+        std::cout << index + 1 << ". " << filename << '\n';
     }
 
     std::size_t choice;
@@ -62,7 +66,7 @@ int main()
     }
 
     const std::string source = files[choice - 1];
-    const std::string executable = std::string(root) + "\\solution.exe";
+    const std::string executable = root + "\\solution.exe";
     const std::string compile = "clang++ -std=c++23 \"" + source + "\" -o \"" + executable + "\"";
 
     if (std::system(compile.c_str()) != 0)
