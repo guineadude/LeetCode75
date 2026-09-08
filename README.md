@@ -75,7 +75,7 @@ its `.cpp` file. Each runnable solution needs its own `main` function.
 - [ ] 0735 Asteroid Collision
 
 ### Queue
-- [ ] 0933 Number of Recent Calls
+- [x] 0933 Number of Recent Calls
 - [ ] 0649 Dota2 Senate
 
 ### Linked List
