@@ -50,7 +50,7 @@ its .cpp file. Each runnable solution needs its own main function to supply test
 - [x] 0283 Move Zeroes
 - [x] 0392 Is Subsequence
 - [x] 0011 Container With Most Water
-- [ ] 1679 Max Number of K-Sum Pairs
+- [x] 1679 Max Number of K-Sum Pairs
 
 ### Sliding Window
 - [ ] 0003 Longest Substring Without Repeating Characters
