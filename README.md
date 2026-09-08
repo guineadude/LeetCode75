@@ -77,7 +77,7 @@ its .cpp file. Each runnable solution needs its own main function to supply test
 
 ### Queue
 - [x] 0933 Number of Recent Calls
-- [ ] 0649 Dota2 Senate
+- [x] 0649 Dota2 Senate
 
 ### Linked List
 - [x] 0002 Add Two Numbers
