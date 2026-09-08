@@ -55,7 +55,7 @@ its .cpp file. Each runnable solution needs its own main function to supply test
 ### Sliding Window
 - [ ] 0003 Longest Substring Without Repeating Characters
 - [x] 0643 Maximum Average Subarray I
-- [ ] 1456 Maximum Number of Vowels in a Substring of Given Length
+- [x] 1456 Maximum Number of Vowels in a Substring of Given Length
 - [ ] 1004 Max Consecutive Ones III
 - [ ] 1493 Longest Subarray of 1's After Deleting One Element
 
