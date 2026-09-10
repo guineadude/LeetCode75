@@ -3,15 +3,14 @@
 #include <iostream>
 #include <vector>
 
-using namespace std;
-
 class Solution
 {
 public:
-    bool increasingTriplet(vector<int> &nums)
+    bool increasingTriplet(std::vector<int> &nums)
     {
         int first{INT_MAX};
         int second{INT_MAX};
+
         for (const int number : nums)
         {
             if (number <= first)
@@ -33,6 +32,6 @@ public:
 
 int main()
 {
-    vector<int> nums{1, 2, 3, 4, 5};
-    cout << boolalpha << Solution{}.increasingTriplet(nums) << '\n';
+    std::vector<int> nums{1, 2, 3, 4, 5};
+    std::cout << std::boolalpha << Solution{}.increasingTriplet(nums) << '\n';
 }
