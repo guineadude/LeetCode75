@@ -10,12 +10,6 @@ function to supply test cases.
 
 ## Scratch Work
 
-Use `testing.cpp` as a blank private workspace for experimenting with a
-solution. When a solution is ready, move it into the matching numbered problem
-file and update the progress checklist below. Numbered files marked incomplete
-may intentionally be empty or contain unrelated practice code, so the filename
-and progress checklist determine which LeetCode problems are complete.
-
 | Folder |          Topic          |
 | :----: | :---------------------: |
 |   01   |     Array and String    |
