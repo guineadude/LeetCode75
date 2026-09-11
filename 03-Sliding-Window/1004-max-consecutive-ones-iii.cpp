@@ -1,36 +1,51 @@
 // LeetCode 1004: Max Consecutive Ones III
-using namespace std;
 #include <iostream>
 #include <vector>
 
 class Solution
 {
 public:
-    int maxOperations(vector<int> &nums, int k)
+    int longestOnes(std::vector<int> &nums, int k)
     {
-        size_t lp{0uz}, rp{nums.size() - 1};
-        int nOOperations{};
-        sort(nums.begin(), nums.end());
+        auto s_p{0uz};
+        auto f_p{0uz};
+        int longestStreak{};
+        int currentStreak{};
 
-        while (lp < rp)
+        while (f_p < nums.size())
         {
-            const int sum{nums[lp] + nums[rp]};
-            if (sum == k)
+            if (nums[f_p] == 0)
             {
-                ++nOOperations;
-                ++lp;
-                --rp;
+                --k;
             }
-            else if (sum < k)
+
+            while (k < 0)
             {
-                ++lp;
+                if (nums[s_p] == 0)
+                {
+                    ++k;
+                }
+
+                --currentStreak;
+                ++s_p;
             }
-            else
+            ++currentStreak;
+            if (currentStreak > longestStreak)
             {
-                --rp;
+                longestStreak = currentStreak;
             }
+            ++f_p;
         }
 
-        return nOOperations;
+        return longestStreak;
     }
 };
+
+int main()
+{
+    Solution solution{};
+    std::vector<int> nums{0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1};
+    int x{solution.longestOnes(nums, 3)};
+    std::cout << x << " is longest streak\n";
+    return 0;
+}
