@@ -4,8 +4,17 @@
 
 From the repository root, compile the runner with
 `clang++ -std=c++23 run-problem.cpp -o run-problem.exe`, then run
-`./run-problem.exe`. Choose a numbered problem from the menu to compile and run
-its .cpp file. Each runnable solution needs its own main function to supply testcases.
+`./run-problem.exe`. Choose a completed numbered problem from the menu to
+compile and run its .cpp file. Each runnable solution needs its own `main`
+function to supply test cases.
+
+## Scratch Work
+
+Use `testing.cpp` as a blank private workspace for experimenting with a
+solution. When a solution is ready, move it into the matching numbered problem
+file and update the progress checklist below. Numbered files marked incomplete
+may intentionally be empty or contain unrelated practice code, so the filename
+and progress checklist determine which LeetCode problems are complete.
 
 | Folder |          Topic          |
 | :----: | :---------------------: |
