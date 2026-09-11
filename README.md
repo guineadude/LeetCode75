@@ -82,7 +82,7 @@ and progress checklist determine which LeetCode problems are complete.
 - [x] 0020 Valid Parentheses
 - [x] 2390 Removing Stars From a String
 - [ ] 0394 Decode String
-- [ ] 0735 Asteroid Collision
+- [x] 0735 Asteroid Collision
 
 ### Queue
 - [x] 0933 Number of Recent Calls
