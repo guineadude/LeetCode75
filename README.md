@@ -44,7 +44,7 @@ function to supply test cases.
 - [x] 1431 Kids With the Greatest Number of Candies
 - [x] 0605 Can Place Flowers
 - [x] 0345 Reverse Vowels of a String
-- [ ] 0151 Reverse Words in a String
+- [x] 0151 Reverse Words in a String
 - [ ] 0238 Product of Array Except Self
 - [x] 0334 Increasing Triplet Subsequence
 - [ ] 0443 String Compression
@@ -70,7 +70,7 @@ function to supply test cases.
 - [x] 2215 Find the Difference of Two Arrays
 - [x] 1207 Unique Number of Occurrences
 - [ ] 1657 Determine if Two Strings Are Close
-- [ ] 2352 Equal Row and Column Pairs
+- [x] 2352 Equal Row and Column Pairs
 
 ### Stack
 - [x] 0020 Valid Parentheses
