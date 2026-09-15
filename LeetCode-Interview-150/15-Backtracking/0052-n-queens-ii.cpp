@@ -1,0 +1,1 @@
+﻿// LeetCode 0052: N-Queens II

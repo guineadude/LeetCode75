@@ -1,4 +1,9 @@
-# LeetCode 75
+# LeetCode Solutions
+
+This repository contains separate solution collections for different LeetCode study plans.
+
+- **LeetCode 75:** the numbered topic folders at the repository root.
+- **LeetCode Interview 150:** [LeetCode-Interview-150/](LeetCode-Interview-150/), kept separate so problems can be solved again from scratch.
 
 ## Run a Problem
 
@@ -8,7 +13,9 @@ From the repository root, compile the runner with
 compile and run its .cpp file. Each runnable solution needs its own `main`
 function to supply test cases.
 
-## Scratch Work
+## LeetCode 75
+
+### Topics
 
 | Folder |          Topic          |
 | :----: | :---------------------: |
@@ -36,7 +43,7 @@ function to supply test cases.
 |   22   |     Monotonic Stack     |
 
 
-## Progress
+### Progress
 
 ### Array and String
 - [x] 1768 Merge Strings Alternately

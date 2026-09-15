@@ -1,0 +1,1 @@
+﻿// LeetCode 0172: Factorial Trailing Zeroes

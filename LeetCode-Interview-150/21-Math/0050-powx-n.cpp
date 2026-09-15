@@ -1,0 +1,1 @@
+﻿// LeetCode 0050: Pow(x, n)
