@@ -3,7 +3,7 @@
 This repository contains separate solution collections for different LeetCode study plans.
 
 - **LeetCode 75:** the numbered topic folders at the repository root.
-- **LeetCode Interview 150:** [LeetCode-Interview-150/](LeetCode-Interview-150/), kept separate so problems can be solved again from scratch.
+- **LeetCode Interview 150:** [LeetCode-Interview-150/](LeetCode-Interview-150/), a complete 150-file scaffold kept separate so problems can be solved again from scratch.
 
 ## Run a Problem
 

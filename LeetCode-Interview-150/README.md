@@ -1,6 +1,6 @@
 # LeetCode Interview 150
 
-This is an independent set of solutions for the LeetCode Interview 150 study plan. Problems shared with LeetCode 75 belong here too when you want to retry them.
+This is an independent set of solutions for the LeetCode Interview 150 study plan. All 150 problem files are scaffolded in the topic folders below. Problems shared with LeetCode 75 belong here too when you want to retry them.
 
 Name files with the problem number and slug, for example:
 
@@ -36,4 +36,10 @@ Name files with the problem number and slug, for example:
 
 ## Progress
 
-Add problems to this list as you complete them in this collection.
+Completed: 1 / 150
+
+### Array / String
+
+- [x] [0121 Best Time to Buy and Sell Stock](01-Array-and-String/0121-best-time-to-buy-and-sell-stock.cpp)
+
+All other `.cpp` files are placeholders ready for independent solutions.
