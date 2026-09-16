@@ -38,15 +38,52 @@ void findCppFiles(const std::filesystem::path &folder, std::vector<std::string> 
     FindClose(search);
 }
 
+std::filesystem::path resolveRepositoryRoot(std::filesystem::path directory)
+{
+    const std::filesystem::path fallback = directory;
+
+    while (true)
+    {
+        if (std::filesystem::exists(directory / "LeetCode75") ||
+            std::filesystem::exists(directory / "LeetCode-Interview-150"))
+        {
+            return directory;
+        }
+
+        const std::filesystem::path parent = directory.parent_path();
+        if (parent == directory || parent.empty())
+        {
+            return fallback;
+        }
+
+        directory = parent;
+    }
+}
+
 int main()
 {
     char executablePath[MAX_PATH];
     GetModuleFileNameA(nullptr, executablePath, MAX_PATH);
-    const std::filesystem::path root = std::filesystem::path(executablePath).parent_path();
+    const std::filesystem::path root = resolveRepositoryRoot(std::filesystem::path(executablePath).parent_path());
 
     std::vector<std::string> files;
-    findCppFiles(root / "LeetCode75", files);
-    findCppFiles(root / "LeetCode-Interview-150", files);
+    bool foundStudyPlanFolder{};
+
+    for (const char *folderName : {"LeetCode75", "LeetCode-Interview-150"})
+    {
+        const std::filesystem::path folder = root / folderName;
+        if (std::filesystem::exists(folder))
+        {
+            foundStudyPlanFolder = true;
+            findCppFiles(folder, files);
+        }
+    }
+
+    if (!foundStudyPlanFolder)
+    {
+        findCppFiles(root, files);
+    }
+
     files.erase(std::remove(files.begin(), files.end(), (root / "run-problem.cpp").string()), files.end());
     std::sort(files.begin(), files.end());
 
