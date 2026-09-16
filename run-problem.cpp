@@ -45,7 +45,8 @@ int main()
     root = root.substr(0, root.find_last_of("\\\\/"));
 
     std::vector<std::string> files;
-    findCppFiles(root, files);
+    findCppFiles(root + "\\LeetCode75", files);
+    findCppFiles(root + "\\LeetCode-Interview-150", files);
     files.erase(std::remove(files.begin(), files.end(), root + "\\run-problem.cpp"), files.end());
     std::sort(files.begin(), files.end());
 
