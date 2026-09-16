@@ -11,31 +11,21 @@ public:
 	std::string reverseWords(std::string s)
 	{
 		std::vector<std::string> words;
-		std::size_t i{};
 
-		auto appendWordShiftIndex = [&s, &i]()
+		for (std::size_t i{}; i < s.size();)
 		{
-			std::string word;
-			for (; i < s.size(); ++i)
+			if (s[i] == ' ')
 			{
-				if (s[i] == ' ')
-				{
-					break;
-				}
-				else
-				{
-					word += s[i];
-				}
+				++i;
+				continue;
 			}
-			return word;
-		};
 
-		for (; i < s.size(); ++i)
-		{
-			if (s[i] != ' ')
+			const std::size_t start{i};
+			for (; i < s.size() && s[i] != ' '; ++i)
 			{
-				words.push_back(appendWordShiftIndex());
 			}
+
+			words.push_back(s.substr(start, i - start));
 		}
 
 		std::string result;

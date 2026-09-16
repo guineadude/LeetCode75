@@ -1,14 +1,15 @@
 #include <algorithm>
 #include <cstdlib>
+#include <filesystem>
 #include <iostream>
 #include <string>
 #include <vector>
 #include <windows.h>
 
-void findCppFiles(const std::string &folder, std::vector<std::string> &files)
+void findCppFiles(const std::filesystem::path &folder, std::vector<std::string> &files)
 {
     WIN32_FIND_DATAA entry;
-    HANDLE search = FindFirstFileA((folder + "\\*").c_str(), &entry);
+    HANDLE search = FindFirstFileA((folder / "*").string().c_str(), &entry);
 
     if (search == INVALID_HANDLE_VALUE)
     {
@@ -23,14 +24,14 @@ void findCppFiles(const std::string &folder, std::vector<std::string> &files)
             continue;
         }
 
-        const std::string path = folder + "\\" + name;
+        const std::filesystem::path path = folder / name;
         if (entry.dwFileAttributes & FILE_ATTRIBUTE_DIRECTORY)
         {
             findCppFiles(path, files);
         }
         else if (name.size() > 4 && name.substr(name.size() - 4) == ".cpp")
         {
-            files.push_back(path);
+            files.push_back(path.string());
         }
     } while (FindNextFileA(search, &entry));
 
@@ -41,13 +42,12 @@ int main()
 {
     char executablePath[MAX_PATH];
     GetModuleFileNameA(nullptr, executablePath, MAX_PATH);
-    std::string root{executablePath};
-    root = root.substr(0, root.find_last_of("\\\\/"));
+    const std::filesystem::path root = std::filesystem::path(executablePath).parent_path();
 
     std::vector<std::string> files;
-    findCppFiles(root + "\\LeetCode75", files);
-    findCppFiles(root + "\\LeetCode-Interview-150", files);
-    files.erase(std::remove(files.begin(), files.end(), root + "\\run-problem.cpp"), files.end());
+    findCppFiles(root / "LeetCode75", files);
+    findCppFiles(root / "LeetCode-Interview-150", files);
+    files.erase(std::remove(files.begin(), files.end(), (root / "run-problem.cpp").string()), files.end());
     std::sort(files.begin(), files.end());
 
     for (std::size_t index = 0; index < files.size(); ++index)

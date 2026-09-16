@@ -7,6 +7,11 @@ class Solution
 public:
     int maxOperations(vector<int> &nums, int k)
     {
+        if (nums.empty())
+        {
+            return 0;
+        }
+
         size_t lp{0uz}, rp{nums.size() - 1};
         int nOOperations{};
         sort(nums.begin(), nums.end());
