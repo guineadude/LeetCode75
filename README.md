@@ -1,47 +1,55 @@
 # LeetCode Solutions
 
-This repository contains separate solution collections for different LeetCode study plans.
+Solutions for LeetCode 75 and Interview 150 study plans.
 
-- **LeetCode 75:** the numbered topic folders at the repository root.
-- **LeetCode Interview 150:** [LeetCode-Interview-150/](LeetCode-Interview-150/), a complete 150-file scaffold kept separate so problems can be solved again from scratch.
+This repository keeps the two study plans separate:
+
+- **LeetCode 75:** [LeetCode75/](LeetCode75/)
+- **LeetCode Interview 150:** [LeetCode-Interview-150/](LeetCode-Interview-150/)
+
+## Repository Structure
+
+| Study Plan | Location | Notes |
+| :-- | :-- | :-- |
+| LeetCode 75 | [LeetCode75/](LeetCode75/) | Completed and in-progress solutions organized by topic folders `01-22` |
+| LeetCode Interview 150 | [LeetCode-Interview-150/](LeetCode-Interview-150/) | Separate scaffold and solution set for the Interview 150 plan |
 
 ## Run a Problem
 
 From the repository root, compile the runner with
 `clang++ -std=c++23 run-problem.cpp -o run-problem.exe`, then run
-`./run-problem.exe`. Choose a completed numbered problem from the menu to
-compile and run its .cpp file. Each runnable solution needs its own `main`
-function to supply test cases.
+`./run-problem.exe`. Choose a completed problem from the menu to compile and
+run its `.cpp` file. Each runnable solution needs its own `main` function to
+supply test cases.
 
 ## LeetCode 75
 
 ### Topics
 
-| Folder |          Topic          |
-| :----: | :---------------------: |
-|   01   |     Array and String    |
-|   02   |       Two Pointers      |
-|   03   |      Sliding Window     |
-|   04   |        Prefix Sum       |
-|   05   |     Hash Map and Set    |
-|   06   |          Stack          |
-|   07   |          Queue          |
-|   08   |       Linked List       |
-|   09   |    Binary Tree - DFS    |
-|   10   |    Binary Tree - BFS    |
-|   11   |    Binary Search Tree   |
-|   12   |       Graphs - DFS      |
-|   13   |       Graphs - BFS      |
-|   14   | Heap and Priority Queue |
-|   15   |      Binary Search      |
-|   16   |       Backtracking      |
-|   17   |          1D DP          |
-|   18   |   Multidimensional DP   |
-|   19   |     Bit Manipulation    |
-|   20   |           Trie          |
-|   21   |        Intervals        |
-|   22   |     Monotonic Stack     |
-
+| Folder | Topic |
+| :-- | :-- |
+| [01-Array-and-String](LeetCode75/01-Array-and-String/) | Array and String |
+| [02-Two-Pointers](LeetCode75/02-Two-Pointers/) | Two Pointers |
+| [03-Sliding-Window](LeetCode75/03-Sliding-Window/) | Sliding Window |
+| [04-Prefix-Sum](LeetCode75/04-Prefix-Sum/) | Prefix Sum |
+| [05-Hash-Map-and-Set](LeetCode75/05-Hash-Map-and-Set/) | Hash Map and Set |
+| [06-Stack](LeetCode75/06-Stack/) | Stack |
+| [07-Queue](LeetCode75/07-Queue/) | Queue |
+| [08-Linked-List](LeetCode75/08-Linked-List/) | Linked List |
+| [09-Binary-Tree-DFS](LeetCode75/09-Binary-Tree-DFS/) | Binary Tree - DFS |
+| [10-Binary-Tree-BFS](LeetCode75/10-Binary-Tree-BFS/) | Binary Tree - BFS |
+| [11-Binary-Search-Tree](LeetCode75/11-Binary-Search-Tree/) | Binary Search Tree |
+| [12-Graphs-DFS](LeetCode75/12-Graphs-DFS/) | Graphs - DFS |
+| [13-Graphs-BFS](LeetCode75/13-Graphs-BFS/) | Graphs - BFS |
+| [14-Heap-and-Priority-Queue](LeetCode75/14-Heap-and-Priority-Queue/) | Heap and Priority Queue |
+| [15-Binary-Search](LeetCode75/15-Binary-Search/) | Binary Search |
+| [16-Backtracking](LeetCode75/16-Backtracking/) | Backtracking |
+| [17-DP-1D](LeetCode75/17-DP-1D/) | 1D DP |
+| [18-DP-Multidimensional](LeetCode75/18-DP-Multidimensional/) | Multidimensional DP |
+| [19-Bit-Manipulation](LeetCode75/19-Bit-Manipulation/) | Bit Manipulation |
+| [20-Trie](LeetCode75/20-Trie/) | Trie |
+| [21-Intervals](LeetCode75/21-Intervals/) | Intervals |
+| [22-Monotonic-Stack](LeetCode75/22-Monotonic-Stack/) | Monotonic Stack |
 
 ### Progress
 
@@ -167,3 +175,35 @@ function to supply test cases.
 ### Monotonic Stack
 - [ ] 0739 Daily Temperatures
 - [ ] 0901 Online Stock Span
+
+## LeetCode Interview 150
+
+See [LeetCode-Interview-150/README.md](LeetCode-Interview-150/README.md) for full progress details.
+
+### Topics
+
+| Folder | Topic |
+| :-- | :-- |
+| [01-Array-and-String](LeetCode-Interview-150/01-Array-and-String/) | Array / String |
+| [02-Two-Pointers](LeetCode-Interview-150/02-Two-Pointers/) | Two Pointers |
+| [03-Sliding-Window](LeetCode-Interview-150/03-Sliding-Window/) | Sliding Window |
+| [04-Matrix](LeetCode-Interview-150/04-Matrix/) | Matrix |
+| [05-Hashmap](LeetCode-Interview-150/05-Hashmap/) | Hashmap |
+| [06-Intervals](LeetCode-Interview-150/06-Intervals/) | Intervals |
+| [07-Stack](LeetCode-Interview-150/07-Stack/) | Stack |
+| [08-Linked-List](LeetCode-Interview-150/08-Linked-List/) | Linked List |
+| [09-Binary-Tree-General](LeetCode-Interview-150/09-Binary-Tree-General/) | Binary Tree General |
+| [10-Binary-Tree-BFS](LeetCode-Interview-150/10-Binary-Tree-BFS/) | Binary Tree BFS |
+| [11-Binary-Search-Tree](LeetCode-Interview-150/11-Binary-Search-Tree/) | Binary Search Tree |
+| [12-Graph-General](LeetCode-Interview-150/12-Graph-General/) | Graph General |
+| [13-Graph-BFS](LeetCode-Interview-150/13-Graph-BFS/) | Graph BFS |
+| [14-Trie](LeetCode-Interview-150/14-Trie/) | Trie |
+| [15-Backtracking](LeetCode-Interview-150/15-Backtracking/) | Backtracking |
+| [16-Divide-and-Conquer](LeetCode-Interview-150/16-Divide-and-Conquer/) | Divide and Conquer |
+| [17-Kadane-Algorithm](LeetCode-Interview-150/17-Kadane-Algorithm/) | Kadane's Algorithm |
+| [18-Binary-Search](LeetCode-Interview-150/18-Binary-Search/) | Binary Search |
+| [19-Heap](LeetCode-Interview-150/19-Heap/) | Heap |
+| [20-Bit-Manipulation](LeetCode-Interview-150/20-Bit-Manipulation/) | Bit Manipulation |
+| [21-Math](LeetCode-Interview-150/21-Math/) | Math |
+| [22-1D-DP](LeetCode-Interview-150/22-1D-DP/) | 1D DP |
+| [23-Multidimensional-DP](LeetCode-Interview-150/23-Multidimensional-DP/) | Multidimensional DP |
