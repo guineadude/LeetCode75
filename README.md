@@ -18,9 +18,10 @@ This repository keeps the two study plans separate:
 
 From the repository root, compile the runner with
 `clang++ -std=c++23 run-problem.cpp -o run-problem.exe`, then run
-`./run-problem.exe`. Choose a completed problem from the menu to compile and
-run its `.cpp` file. Each runnable solution needs its own `main` function to
-supply test cases.
+`./run-problem.exe`. The runner scans the repository recursively, including the
+`LeetCode75/` and `LeetCode-Interview-150/` folders, and lets you choose a
+completed problem to compile and run. Each runnable solution needs its own
+`main` function to supply test cases.
 
 ## LeetCode 75
 
